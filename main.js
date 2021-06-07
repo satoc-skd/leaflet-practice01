@@ -26,6 +26,7 @@ var geojson_data = [
       	type: "Feature",
         properties: {
 	      	name: "箱根神社",
+          isTenant: true,
         },
         geometry: {
         	type: "Point",
@@ -36,6 +37,78 @@ var geojson_data = [
       	type: "Feature",
         properties: {
 	      	name: "箱根関所跡",
+          isTenant: true,
+        },
+        geometry: {
+        	type: "Point",
+          coordinates: [139.026346, 35.192362]
+        }
+      },
+      {
+      	type: "Feature",
+        properties: {
+	      	name: "simonita",
+          isTenant: true,
+        },
+        geometry: {
+        	type: "Point",
+          coordinates: [139.026346, 35.192362]
+        }
+      },
+      {
+      	type: "Feature",
+        properties: {
+	      	name: "dummy zone.",
+          subitems: [
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+            {caption: '箱根関所跡', tenant_id: 100},
+          ],
         },
         geometry: {
         	type: "Point",
@@ -59,19 +132,74 @@ var geojson_data = [
 
 // c.f. https://leafletjs.com/examples/geojson/
 L.geoJson(geojson_data, {
-	onEachFeature: function(feature, layer) {
-  	// プロパティを持っているか？
+  onEachFeature: function(feature, layer) {
+    // プロパティを持っているか？
     if (!(feature.properties)) {
     	return;
     }
-    let searchUrl = `https://www.google.com/maps/search/?api=1&query=${feature.properties.name}`;
-    let mapUrl = `https://www.google.com/maps/search/?api=1&query=${feature.geometry.coordinates[1]}%2C${feature.geometry.coordinates[0]}`;
-    
-    let field = `施設名:${feature.properties.name}<br/>` +
-                 `<a target="_blank" href="${searchUrl}">Google検索</a><br/>` +
-                 `<a target="_blank" href="${mapUrl}">Googleマップ</a>`;
-    
-		layer.bindPopup(field);
-}
+
+    if ( feature.properties.hasOwnProperty('subitems') ) {
+      var items = '';
+      for (let index = 0; index < feature.properties.subitems.length; index++) {
+        const element = feature.properties.subitems[index];
+        // console.log(element);
+        items = items + `<br /><a href="javascript:showPopup('${element.caption}');">${element.caption}</a>`;
+      }
+
+
+      let field = `Select shops<br/>` + items;
+                  //  `<a href="javascript:showPopup('${feature.properties.subitems[0].caption}');">${feature.properties.subitems[0].caption}</a>`;
+      layer.bindPopup(field, { maxHeight: 200, minWidth: 200 });
+
+    } else {
+      let searchUrl = `https://www.google.com/maps/search/?api=1&query=${feature.properties.name}`;
+      let mapUrl = `https://www.google.com/maps/search/?api=1&query=${feature.geometry.coordinates[1]}%2C${feature.geometry.coordinates[0]}`;
+      
+      let field = `施設名:${feature.properties.name}<br/>` +
+                   `<a target="_blank" href="${searchUrl}">Google検索</a><br/>` +
+                   `<a target="_blank" href="${mapUrl}">Googleマップ</a>`;
+      
+      layer.bindPopup(field);
+  
+    }
+
+  },
+  pointToLayer: (geoJsonPoint, latlng) => {
+    // dummy zone is hidden.
+    // console.log(geoJsonPoint.properties.name);
+    // console.log( geoJsonPoint.properties.isTenant )
+
+    if ( !geoJsonPoint.properties.hasOwnProperty('isTenant') ) {
+      return L.marker(latlng);
+    } 
+
+    return L.marker(latlng, { interactive: false, opacity: 0 });
+  },
 }).addTo(mymap);
 
+
+// mymap.on('popupopen', function(e) {
+//   console.log(e);
+//   console.log(e.popup);
+// });
+
+
+var showPopup = (targetName) => {
+  // void mymap.eachLayer((l1) => { if(!l1.hasOwnProperty('feature')){ return; } console.log(l1) })
+  var execItems = [];
+
+  mymap.eachLayer((layer) => {
+//     if ( !execItems ) { execItems = l1 }
+
+    if(layer.options && layer.options.pane === "markerPane") {
+      if ( layer.feature.properties.name === targetName ) {
+        execItems.push(layer);
+      }
+    }
+    return;
+});
+
+  // console.log( execItems )
+  execItems[0].openPopup();
+
+}
