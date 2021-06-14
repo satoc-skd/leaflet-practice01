@@ -12,10 +12,35 @@
   </head>
   <body class="d-flex flex-column h-100">
 
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">プレしマ</a>
+        <div class="nav">
+          <a class="nav-item nav-link" href="#">シェア</a>
+        </div>
+
+        
+        <form class="form-inline w-100" style="display: none;">
+          <input class="form-control w-100"  type="text" placeholder="Search" aria-label="Search">
+        </form>
+      </nav>
+    </header>
+
+
     <main role="main" class="flex-shrink-0">
       <div id="map">
       </div>
     </main>
+
+
+    <footer class="fixed-bottom bg-dark">
+      <ul class="nav justify-content-end">
+        <a class="nav-item nav-link" href="#">使い方</a>
+        <a class="nav-item nav-link" href="#">免責事項</a>
+      </ul>
+    </footer>
+
 
     <!-- jQuery、Popper.js、Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
