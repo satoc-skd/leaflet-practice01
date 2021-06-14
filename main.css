@@ -1,18 +1,33 @@
+main {
+  background-color: lightblue;
+  position: absolute;
+  margin: 0;
+  top: 5.8em;
+  right: 0;
+  left: 0;
+  bottom: 2.5em;
+  border: 3px solid red;
+}
+
+/* マップは赤枠内の全画面表示に広げる */
 #map {
-    height: 600px;
-  }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
   
-  a[href^="http"]:after,
-  a[href^="//"]:after {
+a[href^="http"]:after,
+a[href^="//"]:after {
     margin: 0 0 0 3px;
     font-family: "Font Awesome 5 Free";
     content: '\f35d';
     font-weight: 900;
-  }
-  a[href^="https://www.example.com/"]:after {
+}
+a[href^="https://www.example.com/"]:after {
     margin: inherit;
     font-family: inherit;
     content: '';
     font-weight: inherit;
-  }
-  
+}
