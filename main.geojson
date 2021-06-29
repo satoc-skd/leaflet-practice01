@@ -1,0 +1,110 @@
+[
+	{
+  	"type": "FeatureCollection",
+    "features": [
+      {
+      	"type": "Feature",
+        "properties": {
+	      	"name": "箱根神社",
+          "isTenant": true
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [139.025357, 35.204794]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+	      	"name": "箱根関所跡",
+          "isTenant": true
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [139.026346, 35.192362]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+	      	"name": "simonita",
+          "isTenant": true
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [139.026346, 35.192362]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+	      	"name": "dummy zone.",
+          "subitems": [
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100},
+            {"caption": "箱根関所跡", "tenant_id": 100}
+          ]
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [139.026346, 35.192362]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+	      	"name": "箱根峠"
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [139.014074, 35.182194]
+        }
+      }
+    ]
+  }
+]

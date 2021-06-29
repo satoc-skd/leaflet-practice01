@@ -18,171 +18,62 @@ mymap.setView([35.204794, 139.025357], 13);
 // マーカーのurlは以下
 // https://unpkg.com/browse/leaflet@1.3.1/dist/images/
 
-var geojson_data = [
-	{
-  	type: "FeatureCollection",
-    features: [
-      {
-      	type: "Feature",
-        properties: {
-	      	name: "箱根神社",
-          isTenant: true,
-        },
-        geometry: {
-        	type: "Point",
-          coordinates: [139.025357, 35.204794]
-        }
-      },
-      {
-      	type: "Feature",
-        properties: {
-	      	name: "箱根関所跡",
-          isTenant: true,
-        },
-        geometry: {
-        	type: "Point",
-          coordinates: [139.026346, 35.192362]
-        }
-      },
-      {
-      	type: "Feature",
-        properties: {
-	      	name: "simonita",
-          isTenant: true,
-        },
-        geometry: {
-        	type: "Point",
-          coordinates: [139.026346, 35.192362]
-        }
-      },
-      {
-      	type: "Feature",
-        properties: {
-	      	name: "dummy zone.",
-          subitems: [
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-            {caption: '箱根関所跡', tenant_id: 100},
-          ],
-        },
-        geometry: {
-        	type: "Point",
-          coordinates: [139.026346, 35.192362]
-        }
-      },
-      {
-      	type: "Feature",
-        properties: {
-	      	name: "箱根峠",
-        },
-        geometry: {
-        	type: "Point",
-          coordinates: [139.014074, 35.182194]
-        }
-      },
-    ]
-  }
-];
-
-
 // c.f. https://leafletjs.com/examples/geojson/
-L.geoJson(geojson_data, {
-  onEachFeature: function(feature, layer) {
-    // プロパティを持っているか？
-    if (!(feature.properties)) {
-    	return;
-    }
+//fetchAPIで取得する
+fetch('main.geojson')
+  .then(response => response.json())
+  .then(geojson_data => {
+    L.geoJson(geojson_data, {
+      onEachFeature: function(feature, layer) {
+        // プロパティを持っているか？
+        if (!(feature.properties)) {
+          return;
+        }
 
-    if ( feature.properties.hasOwnProperty('subitems') ) {
-      var items = '';
-      for (let index = 0; index < feature.properties.subitems.length; index++) {
-        const element = feature.properties.subitems[index];
-        // console.log(element);
-        items = items + `<br /><a href="javascript:showPopup('${element.caption}');">${element.caption}</a>`;
-      }
+        if ( feature.properties.hasOwnProperty('subitems') ) {
+          var items = '';
+          for (let index = 0; index < feature.properties.subitems.length; index++) {
+            const element = feature.properties.subitems[index];
+            // console.log(element);
+            items = items + `<br /><a href="javascript:showPopup('${element.caption}');">${element.caption}</a>`;
+          }
 
 
-      let field = `Select shops<br/>` + items;
-                  //  `<a href="javascript:showPopup('${feature.properties.subitems[0].caption}');">${feature.properties.subitems[0].caption}</a>`;
-      layer.bindPopup(field, { maxHeight: 200, minWidth: 200 });
+          let field = `Select shops<br/>` + items;
+                      //  `<a href="javascript:showPopup('${feature.properties.subitems[0].caption}');">${feature.properties.subitems[0].caption}</a>`;
+          layer.bindPopup(field, { maxHeight: 200, minWidth: 200 });
 
-    } else {
-      let searchUrl = `https://www.google.com/maps/search/?api=1&query=${feature.properties.name}`;
-      let mapUrl = `https://www.google.com/maps/search/?api=1&query=${feature.geometry.coordinates[1]}%2C${feature.geometry.coordinates[0]}`;
+        } else {
+          let searchUrl = `https://www.google.com/maps/search/?api=1&query=${feature.properties.name}`;
+          let mapUrl = `https://www.google.com/maps/search/?api=1&query=${feature.geometry.coordinates[1]}%2C${feature.geometry.coordinates[0]}`;
+          
+          let field = `施設名:${feature.properties.name}<br/>` +
+                      `<a target="_blank" href="${searchUrl}">Google検索</a><br/>` +
+                      `<a target="_blank" href="${mapUrl}">Googleマップ</a>`;
+          
+          layer.bindPopup(field);
       
-      let field = `施設名:${feature.properties.name}<br/>` +
-                   `<a target="_blank" href="${searchUrl}">Google検索</a><br/>` +
-                   `<a target="_blank" href="${mapUrl}">Googleマップ</a>`;
-      
-      layer.bindPopup(field);
-  
-    }
+        }
 
-  },
-  pointToLayer: (geoJsonPoint, latlng) => {
-    // dummy zone is hidden.
-    // console.log(geoJsonPoint.properties.name);
-    // console.log( geoJsonPoint.properties.isTenant )
+      },
+      pointToLayer: (geoJsonPoint, latlng) => {
+        // dummy zone is hidden.
+        // console.log(geoJsonPoint.properties.name);
+        // console.log( geoJsonPoint.properties.isTenant )
 
-    if ( !geoJsonPoint.properties.hasOwnProperty('isTenant') ) {
-      return L.marker(latlng);
-    } 
+        if ( !geoJsonPoint.properties.hasOwnProperty('isTenant') ) {
+          return L.marker(latlng);
+        } 
 
-    return L.marker(latlng, { interactive: false, opacity: 0 });
-  },
-}).addTo(mymap);
-
+        return L.marker(latlng, { interactive: false, opacity: 0 });
+      },
+    }).addTo(mymap);
+  });
 
 // mymap.on('popupopen', function(e) {
 //   console.log(e);
 //   console.log(e.popup);
 // });
-
 
 var showPopup = (targetName) => {
   // void mymap.eachLayer((l1) => { if(!l1.hasOwnProperty('feature')){ return; } console.log(l1) })
@@ -203,3 +94,4 @@ var showPopup = (targetName) => {
   execItems[0].openPopup();
 
 }
+
