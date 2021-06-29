@@ -1,5 +1,7 @@
 // c.f.http://www.nowhere.co.jp/blog/archives/20180705-160052.html
 
+const INITIAL_LOCATION = [35.204794, 139.025357];
+
 var mymap = L.map('map');
 
 // 国土地理院のタイルデータを使う
@@ -12,7 +14,7 @@ L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
 //   attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 // }).addTo(mymap);
 
-mymap.setView([35.204794, 139.025357], 13);
+mymap.setView(INITIAL_LOCATION, 13);
 
 
 // マーカーのurlは以下
