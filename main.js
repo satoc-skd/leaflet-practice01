@@ -41,16 +41,24 @@ fetch('main.geojson')
           }
 
 
-          let field = `Select shops<br/>` + items;
+          let field = `お店を選択してください<br/>` + items;
                       //  `<a href="javascript:showPopup('${feature.properties.subitems[0].caption}');">${feature.properties.subitems[0].caption}</a>`;
           layer.bindPopup(field, { maxHeight: 200, minWidth: 200 });
 
         } else {
           let searchUrl = `https://www.google.com/maps/search/?api=1&query=${feature.properties.name}`;
           let mapUrl = `https://www.google.com/maps/search/?api=1&query=${feature.geometry.coordinates[1]}%2C${feature.geometry.coordinates[0]}`;
-          
-          let field = `施設名:${feature.properties.name}<br/>` +
-                      `<a target="_blank" href="${searchUrl}">Google検索</a><br/>` +
+          let coupon = ['<span class="coupon-all">全店共通券</span>'];
+          // 中小店専用券も使えるか？
+          if ( feature.properties.coupons.includes("small-medium") ) {
+            coupon.push('<span class="coupon-small-medium">中小店専用券</span>')
+          }
+          let item = feature.properties.item;
+
+          let field = `<span class="store-name">${feature.properties.name}</span><br/>` +
+                      `取扱品目:${item}<br/>` +
+                      `対応券種<br/>${coupon}<br/>` +
+                      `<br/><a target="_blank" href="${searchUrl}">Google検索</a><br/>` +
                       `<a target="_blank" href="${mapUrl}">Googleマップ</a>`;
           
           layer.bindPopup(field);

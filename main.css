@@ -10,6 +10,22 @@ main {
   border: 0px;
 }
 
+.coupon-all {
+  background-color: #229b8a;
+  color: white;
+  padding: 0.2em;
+}
+
+.coupon-small-medium {
+  background-color: #6c4290;
+  color: white;
+  padding: 0.2em;
+}
+
+.store-name {
+  font-weight: bolder;
+}
+
 /* マップは赤枠内の全画面表示に広げる */
 #map {
   position: absolute;
