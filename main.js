@@ -1,6 +1,6 @@
 // c.f.http://www.nowhere.co.jp/blog/archives/20180705-160052.html
 
-const INITIAL_LOCATION = [35.204794, 139.025357];
+const INITIAL_LOCATION = [35.3328087, 136.8703403];
 
 var mymap = L.map('map');
 

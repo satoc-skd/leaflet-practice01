@@ -5,6 +5,32 @@
       {
       	"type": "Feature",
         "properties": {
+	      	"name": "や台ずし 江南駅前町",
+          "industry": "飲食",
+          "item":"居酒屋",
+          "coupons": ["all", "small-medium"]
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [136.8714318,35.3352371]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+	      	"name": "スギ薬局 古知野店",
+          "industry": "小売",
+          "item":"ドラッグストア",
+          "coupons": ["all"]
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [136.8692103790469, 35.344984391893064]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
 	      	"name": "箱根神社",
           "isTenant": true
         },
