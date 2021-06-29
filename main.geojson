@@ -18,7 +18,7 @@
       {
       	"type": "Feature",
         "properties": {
-	      	"name": "スギ薬局 古知野店",
+	      	"name": "スギ薬局 野白店",
           "industry": "小売",
           "item":"ドラッグストア",
           "coupons": ["all"]
@@ -31,104 +31,88 @@
       {
       	"type": "Feature",
         "properties": {
-	      	"name": "箱根神社",
-          "isTenant": true
-        },
-        "geometry": {
-        	"type": "Point",
-          "coordinates": [139.025357, 35.204794]
-        }
-      },
-      {
-      	"type": "Feature",
-        "properties": {
-	      	"name": "箱根関所跡",
-          "isTenant": true
-        },
-        "geometry": {
-        	"type": "Point",
-          "coordinates": [139.026346, 35.192362]
-        }
-      },
-      {
-      	"type": "Feature",
-        "properties": {
-	      	"name": "simonita",
-          "isTenant": true
-        },
-        "geometry": {
-        	"type": "Point",
-          "coordinates": [139.026346, 35.192362]
-        }
-      },
-      {
-      	"type": "Feature",
-        "properties": {
-	      	"name": "dummy zone.",
+	      	"district": "MEGAドン・キホーテUNY江南店",
           "subitems": [
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100},
-            {"caption": "箱根関所跡", "tenant_id": 100}
+            {"caption": "MEGAドン・キホーテUNY江南店", "tenant_id": 100},
+            {"caption": "フラワーショップ いとう", "tenant_id": 100},
+            {"caption": "ベルナール 江南店", "tenant_id": 100},
+            {"caption": "iPhone修理105Store", "tenant_id": 100},
+            {"caption": "デューポイント江南店", "tenant_id": 100}
           ]
         },
         "geometry": {
         	"type": "Point",
-          "coordinates": [139.026346, 35.192362]
+          "coordinates": [136.87368364462537, 35.35493078037522]
         }
       },
       {
       	"type": "Feature",
         "properties": {
-	      	"name": "箱根峠"
+          "isTenant": true,
+	      	"name": "MEGAドン・キホーテUNY江南店",
+          "industry": "小売",
+          "item":"総合小売",
+          "coupons": ["all"]
         },
         "geometry": {
         	"type": "Point",
-          "coordinates": [139.014074, 35.182194]
+          "coordinates": [136.87368364462537, 35.35493078037522]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+          "isTenant": true,
+	      	"name": "フラワーショップ いとう",
+          "industry": "小売",
+          "item":"生花販売",
+          "coupons": ["all", "small-medium"]
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [136.87368364462537, 35.35493078037522]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+          "isTenant": true,
+	      	"name": "ベルナール 江南店",
+          "industry": "小売",
+          "item":"焼きたてパン・イートインカフェ",
+          "coupons": ["all", "small-medium"]
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [136.87368364462537, 35.35493078037522]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+          "isTenant": true,
+	      	"name": "iPhone修理105Store",
+          "industry": "サービス",
+          "item":"iPhone・スマホ・タブレット・ゲーム機修理",
+          "coupons": ["all", "small-medium"]
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [136.87368364462537, 35.35493078037522]
+        }
+      },
+      {
+      	"type": "Feature",
+        "properties": {
+          "isTenant": true,
+	      	"name": "デューポイント江南店",
+          "industry": "サービス",
+          "item":"美容業",
+          "coupons": ["all", "small-medium"]
+        },
+        "geometry": {
+        	"type": "Point",
+          "coordinates": [136.87368364462537, 35.35493078037522]
         }
       }
     ]
