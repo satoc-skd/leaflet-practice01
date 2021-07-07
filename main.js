@@ -106,21 +106,23 @@ fetch('main.geojson')
 
 var showPopup = (targetName) => {
   // void mymap.eachLayer((l1) => { if(!l1.hasOwnProperty('feature')){ return; } console.log(l1) })
-  var execItems = [];
+  var execItems = null;
 
   mymap.eachLayer((layer) => {
-//     if ( !execItems ) { execItems = l1 }
+    // 既に見つかった場合はこれ以上処理しない。
+    if ( execItems ) { return; }
 
-    if(layer.options && layer.options.pane === "markerPane") {
-      if ( layer.feature.properties.name === targetName ) {
-        execItems.push(layer);
-      }
-    }
+    // markerPane 以外を取り除く
+    if ( !layer.options.hasOwnProperty('pane') ) { return; }
+    if ( layer.feature.properties.name !== targetName ) { return; }
+
+    execItems = layer;
+
     return;
-});
+  });
 
-  // console.log( execItems )
-  execItems[0].openPopup();
+  // 見つかった場合、ポップアップ表示する
+  if ( execItems ) { execItems.openPopup(); }
 
 }
 
