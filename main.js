@@ -14,6 +14,24 @@ L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
 //   attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 // }).addTo(mymap);
 
+// Locate
+var optionLocate = {
+  position: 'topleft',
+  strings: {
+      title: "現在地を表示",
+      popup: "いまここ"
+  },
+  locateOptions: {
+    maxZoom: 16
+  }
+};
+
+var lc = L.control.locate(optionLocate).addTo(mymap);
+
+// マップ表示時に現在地を取得
+lc.start();
+
+
 mymap.setView(INITIAL_LOCATION, 13);
 
 
