@@ -1,1 +1,361 @@
-[{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"や台ずし 江南駅前町","district":"古知野南地区","industry":"飲食","item":"居酒屋","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.8714318","35.3352371"]}},{"type":"Feature","properties":{"name":"和彩鮮食 幸乃家","district":"古知野南地区","industry":"飲食","item":"和食","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.86392","35.331576"]}},{"type":"Feature","properties":{"name":"和風料理 ふじ吉","district":"古知野南地区","industry":"飲食","item":"日本料理","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.8631992","35.3366954"]}},{"type":"Feature","properties":{"name":"㈱アンキ設備","district":"古知野南地区","industry":"建設","item":"水道工事・下水接続工事","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.8663203","35.3377878"]}},{"type":"Feature","properties":{"name":"㈱ホームテック","district":"古知野南地区","industry":"建設","item":"建築リフォーム商品","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.874089","35.336775"]}},{"type":"Feature","properties":{"name":"スギ薬局 野白店","district":"古知野北地区","industry":"小売","item":"ドラッグストア","coupons":["all"]},"geometry":{"type":"Point","coordinates":["136.8692048","35.3449679"]}},{"type":"Feature","properties":{"name":"MEGAドン・キホーテUNY江南店","parent":"MEGAドン・キホーテUNY江南店","industry":"小売","item":"総合小売","coupons":["all"]},"geometry":{"type":"Point","coordinates":["136.8736683384676","35.354882238225755"]}},{"type":"Feature","properties":{"name":"フラワーショップ いとう","parent":"MEGAドン・キホーテUNY江南店","industry":"小売","item":"生花販売","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.8736683384676","35.354882238225755"]}},{"type":"Feature","properties":{"name":"ベルナール 江南店","parent":"MEGAドン・キホーテUNY江南店","industry":"小売","item":"焼きたてパン・イートインカフェ","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.8736683384676","35.354882238225755"]}},{"type":"Feature","properties":{"name":"iPhone修理105Store","parent":"MEGAドン・キホーテUNY江南店","industry":"サービス","item":"iPhone・スマホ・タブレット・ゲーム機修理","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.8736683384676","35.354882238225755"]}},{"type":"Feature","properties":{"name":"デューポイント江南店","parent":"MEGAドン・キホーテUNY江南店","industry":"サービス","item":"美容業","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.8736683384676","35.354882238225755"]}},{"type":"Feature","properties":{"name":"天風の湯","parent":"天風の湯","industry":"サービス","item":"スーパー銭湯","coupons":["all"]},"geometry":{"type":"Point","coordinates":["136.85835518162452","35.34345367144421"]}},{"type":"Feature","properties":{"name":"お食事処えびす","parent":"天風の湯","industry":"飲食","item":"","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.85835518162452","35.34345367144421"]}},{"type":"Feature","properties":{"name":"滋和堂","parent":"天風の湯","industry":"サービス","item":"","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.85835518162452","35.34345367144421"]}},{"type":"Feature","properties":{"name":"ヘアーサロン いちかみ","parent":"天風の湯","industry":"サービス","item":"","coupons":["all","small-medium"]},"geometry":{"type":"Point","coordinates":["136.85835518162452","35.34345367144421"]}},{"type":"Feature","properties":{"district":"MEGAドン・キホーテUNY江南店","tenants":[{"caption":"MEGAドン・キホーテUNY江南店"},{"caption":"フラワーショップ いとう"},{"caption":"ベルナール 江南店"},{"caption":"iPhone修理105Store"},{"caption":"デューポイント江南店"}]},"geometry":{"type":"Point","coordinates":["136.8736683384676","35.354882238225755"]}},{"type":"Feature","properties":{"district":"天風の湯","tenants":[{"caption":"天風の湯"},{"caption":"お食事処えびす"},{"caption":"滋和堂"},{"caption":"ヘアーサロン いちかみ"}]},"geometry":{"type":"Point","coordinates":["136.85835518162452","35.34345367144421"]}}]}]
+[
+  {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "や台ずし 江南駅前町",
+          "district": "古知野南地区",
+          "industry": "飲食",
+          "item": "居酒屋",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8714318",
+            "35.3352371"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "和彩鮮食 幸乃家",
+          "district": "古知野南地区",
+          "industry": "飲食",
+          "item": "和食",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.86392",
+            "35.331576"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "和風料理 ふじ吉",
+          "district": "古知野南地区",
+          "industry": "飲食",
+          "item": "日本料理",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8631992",
+            "35.3366954"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "㈱アンキ設備",
+          "district": "古知野南地区",
+          "industry": "建設",
+          "item": "水道工事・下水接続工事",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8663203",
+            "35.3377878"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "㈱ホームテック",
+          "district": "古知野南地区",
+          "industry": "建設",
+          "item": "建築リフォーム商品",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.874089",
+            "35.336775"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "スギ薬局 野白店",
+          "district": "古知野北地区",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8692048",
+            "35.3449679"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "MEGAドン・キホーテUNY江南店",
+          "parent": "MEGAドン・キホーテUNY江南店",
+          "industry": "小売",
+          "item": "総合小売",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8736865",
+            "35.354845"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "フラワーショップ いとう",
+          "parent": "MEGAドン・キホーテUNY江南店",
+          "industry": "小売",
+          "item": "生花販売",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8736865",
+            "35.354845"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "ベルナール 江南店",
+          "parent": "MEGAドン・キホーテUNY江南店",
+          "industry": "小売",
+          "item": "焼きたてパン・イートインカフェ",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8736865",
+            "35.354845"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "iPhone修理105Store",
+          "parent": "MEGAドン・キホーテUNY江南店",
+          "industry": "サービス",
+          "item": "iPhone・スマホ・タブレット・ゲーム機修理",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8736865",
+            "35.354845"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "デューポイント江南店",
+          "parent": "MEGAドン・キホーテUNY江南店",
+          "industry": "サービス",
+          "item": "美容業",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8736865",
+            "35.354845"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "天風の湯",
+          "parent": "天風の湯",
+          "industry": "サービス",
+          "item": "スーパー銭湯",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.858336",
+            "35.343379"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "お食事処えびす",
+          "parent": "天風の湯",
+          "industry": "飲食",
+          "item": "",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.858336",
+            "35.343379"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "滋和堂",
+          "parent": "天風の湯",
+          "industry": "サービス",
+          "item": "",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.858336",
+            "35.343379"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "ヘアーサロン いちかみ",
+          "parent": "天風の湯",
+          "industry": "サービス",
+          "item": "",
+          "coupons": [
+            "all",
+            "small-medium"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.858336",
+            "35.343379"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "district": "MEGAドン・キホーテUNY江南店",
+          "tenants": [
+            {
+              "caption": "MEGAドン・キホーテUNY江南店"
+            },
+            {
+              "caption": "フラワーショップ いとう"
+            },
+            {
+              "caption": "ベルナール 江南店"
+            },
+            {
+              "caption": "iPhone修理105Store"
+            },
+            {
+              "caption": "デューポイント江南店"
+            }
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8736865",
+            "35.354845"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "district": "天風の湯",
+          "tenants": [
+            {
+              "caption": "天風の湯"
+            },
+            {
+              "caption": "お食事処えびす"
+            },
+            {
+              "caption": "滋和堂"
+            },
+            {
+              "caption": "ヘアーサロン いちかみ"
+            }
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.858336",
+            "35.343379"
+          ]
+        }
+      }
+    ]
+  }
+]
