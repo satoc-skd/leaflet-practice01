@@ -32,17 +32,17 @@ fetch('main.geojson')
           return;
         }
 
-        if ( feature.properties.hasOwnProperty('subitems') ) {
+        if ( feature.properties.hasOwnProperty('tenants') ) {
           var items = '';
-          for (let index = 0; index < feature.properties.subitems.length; index++) {
-            const element = feature.properties.subitems[index];
+          for (let index = 0; index < feature.properties.tenants.length; index++) {
+            const element = feature.properties.tenants[index];
             // console.log(element);
             items = items + `<br /><a href="javascript:showPopup('${element.caption}');">${element.caption}</a>`;
           }
 
 
           let field = `お店を選択してください<br/>` + items;
-                      //  `<a href="javascript:showPopup('${feature.properties.subitems[0].caption}');">${feature.properties.subitems[0].caption}</a>`;
+                      //  `<a href="javascript:showPopup('${feature.properties.tenants[0].caption}');">${feature.properties.tenants[0].caption}</a>`;
           layer.bindPopup(field, { maxHeight: 200, minWidth: 200 });
 
         } else {
@@ -71,7 +71,8 @@ fetch('main.geojson')
         // console.log(geoJsonPoint.properties.name);
         // console.log( geoJsonPoint.properties.isTenant )
 
-        if ( !geoJsonPoint.properties.hasOwnProperty('isTenant') ) {
+        // テナント入りしてない店舗のみピン表示する。
+        if ( !geoJsonPoint.properties.hasOwnProperty('parent') ) {
           return L.marker(latlng);
         } 
 

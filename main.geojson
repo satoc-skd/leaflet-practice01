@@ -32,7 +32,7 @@
       	"type": "Feature",
         "properties": {
 	      	"district": "MEGAドン・キホーテUNY江南店",
-          "subitems": [
+          "tenants": [
             {"caption": "MEGAドン・キホーテUNY江南店", "tenant_id": 100},
             {"caption": "フラワーショップ いとう", "tenant_id": 100},
             {"caption": "ベルナール 江南店", "tenant_id": 100},
@@ -48,7 +48,7 @@
       {
       	"type": "Feature",
         "properties": {
-          "isTenant": true,
+          "parent": "MEGAドン・キホーテUNY江南店",
 	      	"name": "MEGAドン・キホーテUNY江南店",
           "industry": "小売",
           "item":"総合小売",
@@ -62,7 +62,7 @@
       {
       	"type": "Feature",
         "properties": {
-          "isTenant": true,
+          "parent": "MEGAドン・キホーテUNY江南店",
 	      	"name": "フラワーショップ いとう",
           "industry": "小売",
           "item":"生花販売",
@@ -76,7 +76,7 @@
       {
       	"type": "Feature",
         "properties": {
-          "isTenant": true,
+          "parent": "MEGAドン・キホーテUNY江南店",
 	      	"name": "ベルナール 江南店",
           "industry": "小売",
           "item":"焼きたてパン・イートインカフェ",
@@ -90,7 +90,7 @@
       {
       	"type": "Feature",
         "properties": {
-          "isTenant": true,
+          "parent": "MEGAドン・キホーテUNY江南店",
 	      	"name": "iPhone修理105Store",
           "industry": "サービス",
           "item":"iPhone・スマホ・タブレット・ゲーム機修理",
@@ -104,7 +104,7 @@
       {
       	"type": "Feature",
         "properties": {
-          "isTenant": true,
+          "parent": "MEGAドン・キホーテUNY江南店",
 	      	"name": "デューポイント江南店",
           "industry": "サービス",
           "item":"美容業",
