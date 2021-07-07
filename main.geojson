@@ -124,6 +124,367 @@
       {
         "type": "Feature",
         "properties": {
+          "name": "V・drug 江南店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8727953",
+            "35.3315025"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "V・drug 江南北店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8633705",
+            "35.3450871"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "サンドラッグ木賀店",
+          "district": "",
+          "industry": "小売",
+          "item": "医薬品販売",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8684019",
+            "35.3261922"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "サンドラッグ江南店",
+          "district": "",
+          "industry": "小売",
+          "item": "医薬品販売",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8487538",
+            "35.3489512"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "スーパー三心江南店",
+          "district": "",
+          "industry": "小売",
+          "item": "食品・雑貨",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8711111",
+            "35.3444444"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "スギ薬局 古知野店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8632234",
+            "35.3406246"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "スギ薬局 高屋店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8765654",
+            "35.3526667"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "スギ薬局 般若店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8937163",
+            "35.3632282"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "西友 江南店",
+          "district": "",
+          "industry": "小売",
+          "item": "食品",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8676027",
+            "35.3518959"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "ディスカウントドラッグストア コスモス古知野店",
+          "district": "",
+          "industry": "小売",
+          "item": "医薬品・化粧品・食料品・日用品他",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8678506",
+            "35.3402133"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "ディスカウントドラッグストア コスモス村久野店",
+          "district": "",
+          "industry": "小売",
+          "item": "医薬品・化粧品・食料品・日用品他",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.867819",
+            "35.35273"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "ドラッグストアクリエイトSD江南高屋店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8717316",
+            "35.347384"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "ピアゴ布袋店",
+          "district": "",
+          "industry": "小売",
+          "item": "総合小売",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8671814",
+            "35.3171373"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "ホームセンターバロー 江南店",
+          "district": "",
+          "industry": "小売",
+          "item": "日用品・園芸用品他",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8741331",
+            "35.348626"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "マツモトキヨシ ヘルスパンク 今市場店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8863664",
+            "35.3277508"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "マツモトキヨシ ヘルスパンク 三心江南店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8710897",
+            "35.3444664"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "マツモトキヨシ ヘルスバンク 松竹店",
+          "district": "",
+          "industry": "小売",
+          "item": "ドラッグストア",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8468975",
+            "35.3412398"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "ヤマダデンキテックランド江南店",
+          "district": "",
+          "industry": "小売",
+          "item": "家電製品",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8732107",
+            "35.3517038"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "㈱綿半ホームエイド 江南店",
+          "district": "",
+          "industry": "小売",
+          "item": "商品物販",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8587444",
+            "35.3325"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
           "name": "MEGAドン・キホーテUNY江南店",
           "parent": "MEGAドン・キホーテUNY江南店",
           "industry": "小売",
@@ -245,7 +606,7 @@
           "name": "お食事処えびす",
           "parent": "天風の湯",
           "industry": "飲食",
-          "item": "",
+          "item": "鮮魚・定食・麺類・鉄板・おつまみ",
           "coupons": [
             "all",
             "small-medium"
@@ -265,7 +626,7 @@
           "name": "滋和堂",
           "parent": "天風の湯",
           "industry": "サービス",
-          "item": "",
+          "item": "リラクゼーションサービス",
           "coupons": [
             "all",
             "small-medium"
@@ -285,7 +646,7 @@
           "name": "ヘアーサロン いちかみ",
           "parent": "天風の湯",
           "industry": "サービス",
-          "item": "",
+          "item": "理容業",
           "coupons": [
             "all",
             "small-medium"
@@ -296,6 +657,63 @@
           "coordinates": [
             "136.858336",
             "35.343379"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "アピタ江南西店",
+          "parent": "ヴィアモール江南",
+          "industry": "小売",
+          "item": "食品・衣料品・住居関連・テナント",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8551641",
+            "35.343146"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "すいとぴあ江南",
+          "parent": "すいとぴあ江南",
+          "industry": "サービス",
+          "item": "宿泊・お土産",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8786989",
+            "35.3709792"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "平和堂 江南店",
+          "parent": "平和堂 江南店",
+          "industry": "小売",
+          "item": "総合小売",
+          "coupons": [
+            "all"
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.856474",
+            "35.332317"
           ]
         }
       },
@@ -353,6 +771,60 @@
           "coordinates": [
             "136.858336",
             "35.343379"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "district": "ヴィアモール江南",
+          "tenants": [
+            {
+              "caption": "アピタ江南西店"
+            }
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8551641",
+            "35.343146"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "district": "すいとぴあ江南",
+          "tenants": [
+            {
+              "caption": "すいとぴあ江南"
+            }
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.8786989",
+            "35.3709792"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "district": "平和堂 江南店",
+          "tenants": [
+            {
+              "caption": "平和堂 江南店"
+            }
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            "136.856474",
+            "35.332317"
           ]
         }
       }
